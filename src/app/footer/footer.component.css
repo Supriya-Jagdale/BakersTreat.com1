@@ -1,0 +1,113 @@
+
+.footerSection{
+        background: #9a650c;
+        padding: 3em 0 1em 0;
+        color: white;
+        font-family: 'Pontano Sans', sans-serif;
+}
+.first_footer{
+        border-bottom: 1px solid white;
+        margin-bottom: 40px;
+}
+.orderPhone{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 17px;
+        letter-spacing: 0.4px;
+}
+.orderPhone p{
+        color: #ece9e9;
+        margin: 0px;
+        letter-spacing: 0;
+}
+.numFooter{
+        font-size: 16px;
+        font-weight: normal;
+        font-family: 'Noto Sans TC', sans-serif;
+}
+.orderPhone p i{
+        padding-right: 10px;
+        font-size: 19px;
+        color: white;
+}
+.orderTitle p{
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        /* color: #521414; */
+        color: white;
+        font-family: 'Lobster', cursive;
+}
+.footerLogo img{
+        width: 185px;
+        height: 100px;
+        margin-bottom: 5px;
+}
+.time-table {
+        position: relative;
+        padding: 0 0 28px 35px;
+        font-size: 17px;
+        line-height: 27px;
+        color: #cec7c7;
+}
+.time-table:before {
+        content: "\f017";
+        font-family: FontAwesome;
+        position: absolute;
+        display: inline-block;
+        top: 7px;
+        left: 0;
+        color: red;
+        font-size: 21px;
+        line-height: 27px;
+        color: #cec7c7;
+}
+.add-location {
+        padding: 0 0 15px 33px;
+        font-size: 17px;
+        position: relative;
+        line-height: 1.2;
+        color: #cec7c7;;
+}
+.add-location:before {
+        content: "\f041";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #cec7c7;        
+        font-size: 24px;
+        padding-right: 0;
+        position: absolute;
+        top: 0px;
+        left: 4px;
+}
+.social-icons {
+        text-align: center;
+        padding-bottom: 5px;
+}
+.social-icons a {
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        padding: 6px;
+        width: 44px;
+        height: 44px;
+        display: inline-block;
+        margin: 2px;
+        transition: all 0.4s linear;
+}
+.social-icons a:hover{
+        border: 1px solid #8bc9e6;
+        color: #de880a;
+        background: white;
+        transition: all 0.4s linear;
+}
+.copyright-box {
+        padding-bottom: 40px;
+        line-height: 27px;
+        font-size: 17px;
+        color: #e8e6e6;
+}

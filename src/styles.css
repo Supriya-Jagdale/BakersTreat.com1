@@ -1,1 +1,917 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+TC|Nunito+Sans|Pontano+Sans|Source+Sans+Pro&display=swap');
+
+/* 
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+*/
+
+/*  1.   BODY   */
+/*  2.   NAVBAR   */
+/*  3.   SLIDER   */
+/*  4.   PRODUCT LIST   */
+/*  5.   CLIENTS REVIEWS   */
+/*  6.   SPECIAL OFFERS   */
+/*  7.   MODAL POPUP   */
+/*  8.   CAKE & COOKIES   */
+/*   9.   CONTACT */
+
+/*  ==========================  1.  BODY CSS  ==========================  */
+.sec_padding{
+  padding: 4em 0;
+}
+.prod_row{
+  margin-top: 3em;
+}
+.productCol{
+  margin: 2em 0;
+}
+.titleName{
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1px;
+  margin: 10px 0 5px 0;
+}
+.Tit_two{
+    padding: 0 10px;
+}
+.Tit_three{
+    /* color: #FF9800; */
+  color: #cc8919;
+}
+.botBot_title{
+  width: 15%;
+  margin: 8px auto 0 auto;
+  border-bottom: 4px solid #cc851e;
+}
+.leftDot{
+  position: absolute;
+  background: url('assets/images/brown_dot.png');
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-size: cover;
+}
+.rightDot{
+  position: absolute;
+  background: url('assets/images/brown_dot.png');
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background-size: cover;
+}
+a:focus, a:hover, a {
+  text-decoration: none;
+}
+/* Body CSS end */
+
+
+
+/*  ==========================  2.  NAVBAR CSS  ==========================  */
+.logoImg{
+  height: 75px;
+  width: 150px;
+}
+/* Navbar CSS end */
+
+
+
+
+/*  ==========================  3.  SLIDER CSS  ==========================  */
+.slide-control-btn{
+    display: none;
+}
+/* Slider CSS end */
+
+/*  ==========================  4.  PRODUCT LIST CSS  ==========================  */
+.prodName {
+    position: relative;
+    background: white;
+    border: 2px solid #cc8919;
+    padding: 0 10px 0 10px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+}
+.borLeft {
+    border-right: 110px solid transparent;
+    border-top: 100px solid #cc8919;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    background-image: url('assets/images/pattern.png');
+    background-size: contain;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+}
+.prodName:hover .prod_Para span{
+    display: none;
+}
+.ProdOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #cc8919;
+    overflow: hidden;
+    background-image: url('assets/images/pattern.png');
+    background-size: contain;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+}
+.prodCenter {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 0;
+}
+.prodCenter h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    font-family: 'Lobster', cursive;
+    color: #cc8919;
+}
+.prodCenter span {
+    border: 1px solid #cc8919;
+    background: #cc8919;
+    padding: 6px 20px;
+    font-size: 18px;
+    font-family: 'Pontano Sans', sans-serif;
+    letter-spacing: 0.6px;
+}
+.prodimg span{
+    position: absolute;
+    left: -3px;
+    top: 15px;
+    width: 70px;
+    height: 35px;
+    z-index: 1;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 17px;
+}
+.Prodtext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.Prodtext span {
+    border: 1px solid white;
+    padding: 6px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.Prodtext span a, .Prodtext span a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Pontano Sans', sans-serif;
+    letter-spacing: 0.6px;
+    font-size: 18px;
+}
+.prodName:hover {
+    transform: scale(1.02);
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+    box-shadow:0 4px 13px #808080d1;
+}
+.prodName:hover .ProdOverlay {
+    height: 13%;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+}
+.prodName:hover .borLeft {
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -moz-transition: .5s ease;
+    border-right: 125px solid transparent;
+    border-top: 115px solid #cc8919;
+}
+.prodCenter img{
+    width: 85%;
+    height: 240px;
+    margin: 0 auto;
+}
+.prod_Para{
+    padding: 0px;
+}
+.prod_Para p{
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.prod_Para span a{
+    /* color: #cc8919; */
+    color: white;
+    text-decoration: none;
+}
+/* Products List CSS end */
+
+
+
+
+/*  ==========================  5.  CLIENT REVIEWS CSS  ==========================  */
+#tcb-testimonial-carousel {
+    margin-top: 30px;
+  }
+  #tcb-testimonial-carousel a {
+    color: #c5970a;
+  }
+  .clienttitle{
+    font-family: 'Pontano Sans', sans-serif;
+    text-align: right;
+    margin-top: 1em;
+    color: gray;
+    letter-spacing: 0.2px;
+  }
+  .quotes{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    letter-spacing: 0.3px; 
+  }
+  #tcb-testimonial-carousel .text-brand {
+    margin: 9px 0 0 0;
+    color: #c5970a;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-indent: 2em;
+    text-transform: capitalize;
+  }
+  #tcb-testimonial-carousel .carousel-indicators .active {
+    background: #c5970a;
+  }
+  #tcb-testimonial-carousel .no-margin {
+    margin: 0;
+  }
+  #tcb-testimonial-carousel .carousel-indicators li {
+    border: 1px solid #ccc;
+  }
+  #tcb-testimonial-carousel .carousel-control {
+    color: #c5970a;
+    width: 5%;
+  }
+  #tcb-testimonial-carousel .carousel-control:hover,
+  #tcb-testimonial-carousel .carousel-control:focus {
+    color: #c5970a;
+  }
+  #tcb-testimonial-carousel .carousel-control.left,
+  #tcb-testimonial-carousel .carousel-control.right {
+    background-image: none;
+  }
+  #tcb-testimonial-carousel .item {
+    padding: 15px 40px;
+    background: #f8f8f8;
+  }
+  #tcb-testimonial-carousel .media-object {
+    margin: auto;
+    border-radius: 50%;
+    width: 140px;
+    box-shadow: 0 4px 6px 1px grey;
+    border: 2px solid #d3d3d359;
+  }
+  @media screen and (max-width: 768px) {
+    
+  }
+  .reviewSection{
+    background: url('assets/images/clientReviews/back.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+  }
+.clientoverlay{
+    padding: 5em 0;
+    background: #000000c2;
+}
+.clientName{
+    color:white;
+}
+.bottomWaves{
+    background: url('assets/images/waves.png');
+    background-size: contain;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 47px;
+}
+.topWaves{
+    background: url('assets/images/waves.png');
+    background-size: contain;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 47px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+/* CLIENT REVIEW CSS end */
+
+
+
+/*  ==========================  6.  SPECIAL OFFERS CSS  ==========================  */
+.row_Offers{
+  margin-top: 3em;
+}
+.box-wrapper {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.48);
+  padding: 0;
+  text-align: center;
+  transition: all 0.4s linear;
+  border: 4px solid transparent;
+  margin: 2em 0;
+}
+.box-wrapper:hover{
+  box-shadow: 0px 9px 13px 5px #808080b3;
+  transition: all 0.4s linear;
+  border: 4px solid #d2830e;
+}
+.dotOffers{
+  width: 100%;
+  height: 325px;
+  overflow: hidden;
+  background: url('assets/images/bakeryicon.jpg');
+  background-size: cover;
+}
+.offerCake_Img{
+  width: 85%;
+  height: 270px;
+  margin: auto;
+}
+.box-wrapper .success {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 999;
+}
+.expanded .box-wrapper .success {
+  opacity: 1;
+  transition: opacity 0.3s 0.6s;
+}
+.box-wrapper .success:before, .box-wrapper .success:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #fff;
+}
+.box-wrapper .success:before {
+  width: 40px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box-wrapper .success:after {
+  width: 88px;
+  height: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -16px;
+  left: 8px;
+}
+
+.cake_title {
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+}
+.cake_desc {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 0 15px;
+  text-indent: 2em;
+  line-height: 1.1;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+.dotBackColor{
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#fbf4f4, #3c39396b);
+  background: url('assets/images/dot.png');
+}
+.box-content {
+  position: relative;
+  z-index: 1;
+}
+.box-content:before {
+  content: '';
+  width: 101%;
+  height: 55px;
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  top: -35px;
+  left: 0%;
+  z-index: -1;
+}
+.box-content .buy {
+  display: block;
+  top: -80px;
+  right: 30px;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.box-content .buy span {
+  width: 70px;
+  height: 70px;
+  background-color: #cc7e0a;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 36px;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.box-content .buy span i {
+  padding: 15px;
+}
+.expanded .box-content .buy span {
+  width: 750px;
+  height: 750px;
+}
+.expanded .box-content .buy span i {
+  display: none;
+}
+.cake_title h3{
+  margin: 7px 0 15px 0;
+  font-weight: 900;
+  font-family: 'Lobster', cursive;
+  font-size: 23px;
+  padding-top: 13px;
+  letter-spacing: 2px;
+  color: #ec9515;
+}
+.cake_price {
+  font-size: 2em;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  margin: 10px auto 0;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  color: #da9023;
+}
+.fa.fa-star{
+  color: #4caf50cf;
+}
+.box-content .cake_price:after, .box-content .cake_price:before {
+  content: '';
+  height: 1px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  background-color: #ddd;
+  top: 18px;
+}
+.box-content .cake_price:before {
+  left: -50px;
+}
+.box-content .cake_price:after {
+  right: -50px;
+}
+.box-content .cake_Stars ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+.box-content .focake_Starsoter ul li {
+  color: #EFD829;
+}
+/* SPECIAL OFFERS CSS end */
+
+
+
+/*  ==========================  7.  POPUP MODAL CSS  ==========================  */
+
+a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: #757575;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+}
+.modal-title {
+  font-size: 34px;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 2em;
+  font-size: 15px;
+}
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+.modal_cakeImg{
+  text-align: center;
+}
+.modal_cakeImg img{
+  width: 80%;
+  margin: auto;
+}
+.mod_cakeName{
+  font-family: 'Lobster', cursive;
+  font-size: 29px;
+  color: #9a650c;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.mod_cakePrice{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 13px;
+  color: #757472;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.mod_Input{
+  background: #9a650c;
+  border-radius: 0;
+  height: 45px;
+  font-size: 18px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: white;
+  letter-spacing: 0.6px;
+  width: 85%;
+}
+.mod_form .form-group{
+margin-bottom: 20px;
+}
+.mod_Text{
+  max-width: 85%;
+  min-width: 85%;
+  font-size: 18px;
+  font-family: 'Pontano Sans', sans-serif;
+  letter-spacing: 0.6px;
+  color: #9a650c;
+}
+.mod_UL{
+  text-align: left;
+  margin-top: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+.mod_UL p{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #9a650c;
+  text-transform: capitalize;
+}
+.mod_UL li{
+  line-height: 1.7;
+}
+.giftLabel{
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.giftLabel input{
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+.btnMod_center{
+  text-align: center;
+}
+.btn_Mod{
+  border: 1px solid #9a650c;
+  color: #9a650c;
+  padding: 5px 5px;
+  min-width: 155px;
+  margin: 0 10px;
+  background: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* Modal CSS end */
+
+/*  ==========================  8.  CAKE AND COOKIES CSS  ==========================  */
+.sectionCakeBanner{
+  width: 100%;
+  height: 350px;
+}
+.sectioncooky{
+  background: #d3d3d321;
+  border-top: 1px solid #d3d3d329;
+  border-bottom: 1px solid #d3d3d329;
+}
+.bannerCake{
+  width: 100%;
+  height: 100%;
+}
+.cupcake{
+  margin-top: 4em;
+}
+.sectionCupcake{
+  padding: 5em 0;
+}
+.cupcake_Wrapper{
+  margin: 2em 0;
+}
+.cupcake_Inner{
+  position: relative;
+  background: white;
+  border: 1px solid #e6ebec;
+  box-shadow: 0 1px 7px 1px #808080a6;
+  padding: 0px;
+  transition: all 0.4s linear;
+}
+.cupcake_Inner:hover{
+  box-shadow: 0 1px 13px 2px grey;
+  transform: scale(1.02);
+  transition: all 0.4s linear;
+}
+.triangleCup{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+}
+.cupcakeImg{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2em;
+}
+.cupcakeImg img{
+  width: 100%;
+  height: 100%;
+}
+.cupcakeName{
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #9a650c;
+  letter-spacing: 1px;
+}
+.cupcakePrice{
+  font-family: 'Lobster', cursive;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #9a650c;
+  letter-spacing: 0;
+  padding: 0 15px;
+}
+.cupcakePrice i.fa{
+  margin-right: 10px;
+}
+.cupcakeDesc{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: gray;
+  padding: 0 15px;
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-indent: 2em;
+  margin-bottom: 2em;
+}
+.cookies_Wrapper{
+  margin: 1em 0;
+}
+.cookies_Inner{
+  position: relative;
+  background: white;
+  border: 3px solid lightgray;
+}
+.cookiesImg{
+  width: 100%;
+  height: 220px;
+  margin-bottom: 9em;
+  margin-top: 1em;
+  text-align: center;
+}
+.cookiesImg img{
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.cookies_Inner:hover .cookieText{
+  height: 35%;
+}
+.cookies_Inner:hover .cookyPrice{
+  margin: 8px 0;
+  font-size: 30px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.cookies_Inner:hover .cookiesImg img{
+  transform: scale(0.8);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.cookieText p{
+  margin: 0px;
+}
+.cookieText{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #9a650c;
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.cookyPrice{
+  margin: 5px 0;
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.cookyDozen{
+  margin-top: 5px!important;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.7px;
+  color: #d6d0d0;
+}
+/* Cake and cookies css end */
+
+
+/*  ==========================  9.  CONTACT CSS  ==========================  */
+.formWrapper{
+  margin-bottom: 8em;
+  text-align: center;
+}
+.textContact p{
+  display: inline;
+  padding: 0 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+
+.textContact .decor-left{
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background: transparent;
+}
+.textContact .decor-left span {
+  position: absolute;
+  top:0;
+  left: -8px;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #9a650c;
+  content: "";
+  margin: 2px 0;
+}
+.textContact .decor-left:before{
+  position: absolute;
+  top: -2px;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #9a650c;
+  border-radius: 50%;
+  content: "";
+}
+.textContact .decor-left:after{
+  position: absolute;
+  top: -2px;
+  right: 15px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #9a650c;
+  border-radius: 50%;
+  content: "";
+}
+
+.textContact .decor-right{
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background: transparent;
+}
+.textContact .decor-right span {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #9a650c;
+  content: "";
+  margin: 2px 0;
+}
+.textContact .decor-right:before{
+  position: absolute;
+  top: -2px;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #9a650c;
+  border-radius: 50%;
+  content: "";
+}
+.textContact .decor-right:after{
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #9a650c;
+  border-radius: 50%;
+  content: "";
+}
+/* Contact CSS End */

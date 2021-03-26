@@ -1,0 +1,295 @@
+<section class="sectionCheckout">
+  <div class="leftDot"></div>
+  <div class="rightDot"></div>  
+  <div class="container checkoutContainer">
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+        <!--Accordian Start  -->        
+        <div class="panel-group" id="accordion1">
+
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">Contact Details</a>
+              </h4>
+            </div>
+
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <form>
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="text" class="form-control" placeholder="Enter Full Name" required />
+                  </div>
+
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="text" class="form-control" placeholder="Enter Mobile Number" required />
+                  </div>
+
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="email" class="form-control" placeholder="Enter Email_Id" required />
+                  </div>
+                </form>
+                <div class="col-xs-12 continue">
+                  <button class="continuebtn"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" title="Click to continue">Continue</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">Receiver Details</a>
+              </h4>
+            </div>
+
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 selectArea">
+                  <input type="radio" name="delivery" value="delivery" (click)="deliveryFun()"><label>Local Delivery</label> 
+                  <input type="radio" name="pickup" value="pickup" (click)="pickupFun()"><label> Local Pickup</label> 
+                </div>
+
+                <!-- Home Delivery Code -->
+                <div class="homeDelivery" *ngIf="homeDelivery">
+                  <form>
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Receiver Full Name" required />
+                    </div>
+  
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Receiver Mobile Number" required />
+                    </div>
+                    
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Alternative Mobile Number" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="email" class="form-control" placeholder="Enter Email_Id" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Enter Address" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Alternative Address" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Pin Code" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Enter City" required />
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                      <input type="text" class="form-control" placeholder="Enter State" required />
+                    </div>
+                  </form>
+                </div>
+                <!-- Home Delivery Code End -->
+
+                <!-- Pickup Code -->
+                <div class="pickUp" *ngIf="pickUp">
+                  <div class="pickupDiv col-xs-12">
+                    <p class="PickLocTitle">Location Details :</p>
+                    <p class="PickLocadd">
+                      Baker's Treat, Harpahale Building,<br>
+                      Bhekarainagar, Hadapsar, <br>
+                      Pune, 411041, Maharashtra, India.
+                    </p>
+
+                    <form>
+                      <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                        <input type="date" class="form-control" placeholder="Pickup Date" required />
+                      </div>
+
+                      <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                        <input type="time" class="form-control" placeholder="Pickup Time" required />
+                      </div>
+
+                      <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                        <input type="text" class="form-control" placeholder="Receiver Name" required />
+                      </div>
+
+                      <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                        <input type="text" class="form-control" placeholder="Receiver Contact" required />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Pickup Code End -->
+
+                <div class="col-xs-12 continue">
+                  <button class="continuebtn"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" title="Click to continue">Continue</a></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">Date / Message</a>
+              </h4>
+            </div>
+
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                
+                <form>
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="date" class="form-control" placeholder="Occassion Date" required />
+                  </div>
+
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="text" class="form-control" placeholder="Special Occassion" required />
+                  </div>
+
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <input type="time" class="form-control" placeholder="Message On Cake" required />
+                  </div>
+
+                  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 formGroup">
+                    <textarea rows="3" class="textareaMessage form-control" placeholder="Special Message For Us"></textarea>
+                  </div>                      
+                </form>
+
+                <div class="col-xs-12 continue">
+                  <button class="continuebtn"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour" title="Click to continue">Continue</a></button>
+                </div>
+
+              </div>
+            </div>
+
+          </div> 
+
+          <div class="panel panel-default">
+
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">Review Order</a>
+                </h4>
+              </div>
+  
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                  <div class="table-responsive reviewTable">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Cake</th>
+                          <th>Price</th>
+                          <th>Quanity</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> <img src="assets/images/Products/1.png"> </td>
+                          <td>Chocolate Cake</td>
+                          <td> <i class="fa fa-inr"></i> 450 /-. </td>
+                          <td>1</td>
+                          <td> <i class="fa fa-inr"></i> 450 /-. </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="col-xs-12 receiverReview">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reviewDet">
+                      <div class="recName">
+                        <div class="recS_width"> Name : </div> 
+                        <div class="DetAns">Nilesh Arun Chavan</div> 
+                      </div>
+                      <div class="reccont">
+                        <div class="recS_width"> Contact : </div> 
+                        <div class="DetAns">9234658797</div> 
+                      </div>
+                      <div class="recAddr">
+                        <div class="recS_width"> Address : </div> 
+                        <div class="DetAns fullAddR_order">Baker's Treat, Harpanale Building, Hadapsar, Pune</div> 
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 reviewTotal">
+                      <p>Cash On Delivery</p>
+                      <p class="totalCharges">Total : <span><i class="fa fa-inr"></i>450.00 /-.</span> </p>
+                      <p class="totalCharges">GST Charges : <span><i class="fa fa-inr"></i>00.00 /-.</span> </p>
+                      <p class="totalCharges">Grand Total : <span><i class="fa fa-inr"></i>450.00 /-.</span> </p>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+  
+            </div> 
+
+        </div><!--Accordian end  -->
+      </div><!--col 7 end  -->
+
+
+      <!-- Order Details Start -->
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+        <div class="oderSummary col-xs-12">
+          <p>Order Summary</p>
+          <div class="col-xs-12 orderDiv">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary1">
+                <p> Chocolate Cake :</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary2">
+                <p>1 * 450 /-.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary1">
+                <p> Subtotal :</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary2">
+                <p>450 /-.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary1">
+                <p> Local Pickup :</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary2">
+                <p>00.00 /-.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary1">
+                <p> Taxes :</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary2">
+                <p>00.00 /-.</p>
+              </div>
+            </div>
+            <div class="row totalTB">
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary1">
+                <p> total :</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 summary2">
+                <p>450.00 /-.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Order Details end -->
+
+    </div>
+  </div>
+</section>

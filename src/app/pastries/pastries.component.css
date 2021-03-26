@@ -1,0 +1,67 @@
+
+.sectionPastries{
+      padding: 5em 0;
+}
+.pastryCol{
+      padding: 0;
+      margin-top: 4em;
+}
+.pastry_Wrapper{
+      margin: 1em 0;
+}
+.pastry_Inner{
+      border: 1px solid lightgray;
+      box-shadow: 0 0 7px 2px lightgrey;
+      padding: 20px 15px 25px 15px;
+      text-align: center;
+      transition: all 0.5s linear;
+}
+.pastry_Inner:hover{
+      transition: all 0.5s linear;
+      box-shadow: 0 3px 9px 5px #b7b2b2;
+}
+.pastry_Inner:hover .pastry{
+      transition: all 0.5s linear;
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+}
+.pastry_Inner:hover .pastryPrice{
+      transition: all 0.5s linear;
+      font-size: 20px;
+}
+.pastry_Inner:hover .pastryname{
+      transition: all 0.5s linear;
+      font-size: 20px;
+}
+.imgPastry{
+      height: 250px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2em;
+}
+.pastry{
+      height: 100%;
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      transition: all 0.5s linear;
+}
+.pastryPrice{
+      font-family: 'Lobster', cursive;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      transition: all 0.5s linear;
+}
+.pastryname{
+      margin-bottom: 0;
+      font-family: 'Lobster', cursive;
+      font-size: 17px;
+      color: #9a650c;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.5s linear;
+}

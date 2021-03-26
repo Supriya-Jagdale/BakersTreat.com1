@@ -1,0 +1,184 @@
+.sectionCheckout{
+      position: relative;
+}
+.formGroup{
+      margin: 15px 0;
+}
+.formGroup input{
+      height: 45px;
+      border-radius: 0;
+      font-size: 17px;
+      font-family: 'Source Sans Pro', sans-serif;
+      letter-spacing: 0.4px;
+}
+.panel-title a{
+      font-family: 'Pontano Sans', sans-serif;
+      font-size: 15px;
+      color: #1d1c1c;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      text-decoration: none;
+}
+.checkoutContainer{
+      padding: 4em 0;
+}
+.continue{
+      margin-bottom: 10px;
+      margin-top: 15px;
+}
+.continuebtn a, .continuebtn a:hover{
+      text-decoration: none;
+      color: #9a650c;
+}
+.continuebtn{
+      background: white;
+      color: #9a650c;
+      border: 1px solid #9a650c;
+      padding: 7px 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      text-transform: uppercase;
+      min-width: 130px;
+      letter-spacing: 0.5px;
+}
+.selectArea{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      margin-bottom: 1em;
+}
+.selectArea label{
+      font-weight: normal;
+      margin: 0 10px;
+}
+.reviewTable{
+      margin: 15px 0;
+}
+.reviewTable>table>thead>tr>th{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
+      color: #827e7e;
+      text-transform: uppercase;
+}
+.reviewTable>table>tbody>tr>td{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 15px;
+      color: #797575;
+}
+.reviewTable>table>tbody>tr>td>img{
+      width: 50px;
+      height: 50px;
+}
+.textareaMessage{
+      border-radius: 0px;
+      min-width: 100%;
+      max-width: 100%;
+}
+.DetAns{
+      color: #9a650c;
+      display: inline-block;
+      width: 75%;
+}
+.reviewDet{
+      font-family: 'Pontano Sans', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+}
+.receiverReview{
+      padding: 0px;
+}
+.recS_width{
+      color: #797575!important;
+      display: inline-block;
+      width: 25%;
+}
+.reviewTotal{
+      font-family: 'Pontano Sans', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      margin-bottom: 5px;
+      text-align: right;
+}
+.reviewTotal p:first-child{
+      text-align: center;
+      border: 1px solid #9a650c;
+      padding: 5px 0;
+      font-size: 17px;
+      margin: 0 auto 1em auto;
+      width: 80%;
+      color: white;
+      background: #9a650c;
+      cursor: pointer;
+      text-transform: capitalize;
+      letter-spacing: 0.7px;
+}
+.recName, .reccont, .recAddr{
+      margin-bottom: 10px;
+}
+.fullAddR_order{
+      position: absolute;
+      top: 52px;
+}
+.totalCharges{
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0 0 2px 0;
+      color: #676363;
+      font-size: 17px;
+}
+.totalCharges span{
+      color: #9a650c!important;
+      font-weight: 600;
+}
+.totalCharges span i{
+      padding: 0 5px;
+      font-size: 15px;
+}
+.PickLocTitle{
+      font-family: 'Lobster', cursive;
+      font-size: 19px;
+      color: gray;
+      letter-spacing: 1px;
+      margin-top: 10px;
+}
+.PickLocadd{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      color: #9a650c;
+      letter-spacing: 0;
+      margin-top: 10px;
+      line-height: 1.2;
+}
+.oderSummary{
+
+}
+.oderSummary p{
+      font-family: 'Lobster', cursive;
+      font-size: 20px;
+      color: #5d5959fc;
+      letter-spacing: 1px;
+}
+.orderDiv{
+      background: #d3d3d34d;
+      padding: 20px 15px;
+      border: 1px solid #d3d3d382;
+      margin-top: 2em;
+}
+.orderDiv .row{
+      margin: 0px;
+}
+.summary1 p, .summary2 p{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      margin: 8px 0;
+      letter-spacing: 0;
+}
+.summary1{
+      text-align: left;
+}
+.summary2{
+      text-align: right;
+}
+.totalTB{
+      border-top: 1px solid lightgray;
+      margin-top: 10px!important;
+}

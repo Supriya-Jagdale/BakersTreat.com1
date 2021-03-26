@@ -1,0 +1,74 @@
+.branchSection{
+      position: relative;
+}
+.dotPos{
+      position: absolute;
+      width: 20px;
+      height: 100%;
+}
+.leftBranch{
+      left: 0;
+}
+.rightBranch{
+    right: 0;  
+    transform: rotate(180deg); 
+}
+.banchPad45{
+      padding: 45px 0;
+      text-align: center;
+}
+.logoBranch{
+      padding: 2em 0;
+}
+.logoBranch img{
+      width: 110px;
+}
+.branchDef{
+      text-align: center;
+      font-family: 'Pontano Sans', sans-serif;
+      font-size: 17px;
+      color: gray;
+      margin-bottom: 3em;
+}
+.branchList{
+      margin: 2em 0;
+      font-family: 'Pontano Sans', sans-serif;
+      transition: all 1s ease-in-out;
+}
+ 
+.branchList img{
+      width: 100%;
+      border: 7px solid #d3d3d34f;
+      margin-bottom: 2em;
+      height: 270px;
+}
+.branchList p{
+      font-size: 24px;
+      color: #9a650c;
+      font-weight: 600;
+}
+.socialMedia{
+      margin: 4em 0;
+}
+.socialicon{
+      margin: 3em 0 0 0;
+      text-align: center;
+}
+.socialicon img{
+      width: 125px;
+      height: 60px;
+}
+.socialSection{
+      background: #d3d3d32e;
+      position: relative;
+}
+
+
+@media screen and (max-width:768px){
+      .branchSection {
+            padding: 0 20px;
+      }
+      .dotPos{
+            display: none;
+      }
+}

@@ -1,0 +1,89 @@
+
+.sectionForm{
+      padding: 5em 0;
+}
+.orderForm_Wrapper{
+
+}
+.SPANnAME{
+      width: 30%;
+      display: inline-block;
+}
+.formWrapper {
+      margin-bottom: 5em;
+  }
+.orderForm_Wrapper .form-group{
+      margin-bottom: 20px;
+}
+.orderForm_Wrapper .form-group input{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      border-radius: 0;
+      height: 37px;
+      letter-spacing: 0.2px;
+      color: black;
+}
+label{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      color: #b5b2b2;
+      font-weight: normal;
+      text-transform: capitalize;
+}
+.orderBtn{
+      text-align: right;
+      padding: 0;
+      margin-top: 15px;
+}
+.orderbtn{
+      font-family: 'Pontano Sans', sans-serif;
+      font-size: 17px;
+      text-transform: uppercase;
+      padding: 8px 10px;
+      background: white;
+      border: 1px solid #9a650c;
+      min-width: 160px;
+      color: #9a650c;
+      letter-spacing: 1px;
+}
+.textareaWidth{
+      max-width: 100%;
+      min-width: 100%;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      border-radius: 0;
+      letter-spacing: 0.2px;
+      color: black;
+}
+.orderForm_details{
+      text-align: center;
+}
+.orderDetails{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      margin: 15px 0;
+      color: #80808094;
+      text-align: left;
+      text-transform: uppercase;
+}
+.orderDetails .spanAns{
+      color: #9a650c;
+      font-size: 17px;
+      width: 70%;
+      display: inline-block;
+}
+.intro{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 17px;
+      margin: 10px 0 15px 0;
+      color: #9a650c;
+      letter-spacing: 0.2px;
+      text-indent: 3em;
+      text-align: left;
+}
+.orderCake{
+      margin: auto;
+      width: 50%;
+      height: 150px;
+}
